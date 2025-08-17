@@ -378,7 +378,7 @@ const gallery = [
 
             {/* Desktop Menu */}
             <div className="hidden lg:flex items-center space-x-8">
-              <button onClick={() => scrollToSection('home')} className="text-gray-700 hover:text-orange-600 font-medium transition-colors">Home</button>
+              <button onClick={() => window.location.href("https://iskcon-kanpur.vercel.app/")} className="text-gray-700 hover:text-orange-600 font-medium transition-colors">Home</button>
               
               <div className="relative">
                 <button 
@@ -433,7 +433,7 @@ const gallery = [
           {isMenuOpen && (
             <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-2xl rounded-b-2xl border-t border-orange-100">
               <div className="py-6 px-4 space-y-4">
-                <button onClick={() => scrollToSection('home')} className="block w-full text-left text-gray-700 hover:text-orange-600 py-2 font-medium">Home</button>
+                <button onClick={() => window.location.href("https://iskcon-kanpur.vercel.app/")} className="block w-full text-left text-gray-700 hover:text-orange-600 py-2 font-medium">Home</button>
                 <button onClick={() => scrollToSection('philosophy')} className="block w-full text-left text-gray-700 hover:text-orange-600 py-2 font-medium">About</button>
                 <button onClick={() => scrollToSection('programs')} className="block w-full text-left text-gray-700 hover:text-orange-600 py-2 font-medium">Activities</button>
                 <button onClick={() => scrollToSection('events')} className="block w-full text-left text-gray-700 hover:text-orange-600 py-2 font-medium">Events & Announcements</button>
@@ -1126,7 +1126,7 @@ const gallery = [
   <ul className="space-y-2 text-black">
     <li>
       <a href="https://iskconkanpur.com/donate__trashed/folk/" className="hover:text-orange-400 transition-colors" target="_blank" rel="noopener noreferrer">
-        FLOK
+        FOLK
       </a>
     </li>
     <li>

@@ -250,7 +250,7 @@ return (
 
             {/* Desktop Menu */}
             <div className="hidden lg:flex items-center space-x-8">
-              <button onClick={() => scrollToSection('home')} className="text-gray-700 hover:text-orange-600 font-medium transition-colors">Home</button>
+              <button onClick={() => window.location.href("https://iskcon-kanpur.vercel.app/")} className="text-gray-700 hover:text-orange-600 font-medium transition-colors">Home</button>
               
               <div className="relative">
                 <button 
@@ -305,7 +305,7 @@ return (
           {isMenuOpen && (
             <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-2xl rounded-b-2xl border-t border-orange-100">
               <div className="py-6 px-4 space-y-4">
-                <button onClick={() => scrollToSection('home')} className="block w-full text-left text-gray-700 hover:text-orange-600 py-2 font-medium">Home</button>
+                <button onClick={() => window.location.href("https://iskcon-kanpur.vercel.app/")} className="block w-full text-left text-gray-700 hover:text-orange-600 py-2 font-medium">Home</button>
                 <button onClick={() => scrollToSection('philosophy')} className="block w-full text-left text-gray-700 hover:text-orange-600 py-2 font-medium">About</button>
                 <button onClick={() => scrollToSection('programs')} className="block w-full text-left text-gray-700 hover:text-orange-600 py-2 font-medium">Activities</button>
                 <button onClick={() => scrollToSection('events')} className="block w-full text-left text-gray-700 hover:text-orange-600 py-2 font-medium">Events & Announcements</button>
@@ -341,10 +341,10 @@ return (
               His Divine Grace A.C. Bhaktivedanta  Swami Prabhupada
             </h2>
            </div>
-            <p className="text-lg md:text-xl text-white mb-8 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-black font-extrabold mb-8 max-w-xs mx-auto  bg-amber-100 rounded-2xl p-1">
               Founder-Acharya of the International Society for Krishna Consciousness (ISKCON)
               <br />
-              <span className="text-amber-200 font-semibold">(1896-1977)</span>
+              <span className="text-black font-extrabold bg-amber-100 rounded-2xl p-1">(1896-1977)</span>
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -650,7 +650,7 @@ return (
   <h4 className="text-lg font-semibold mb-4 text-white">About Us</h4>
   <ul className="space-y-2 text-black">
     <li>
-      <a href="https://iskconkanpur.com/" className="hover:text-orange-400 transition-colors" target="_blank" rel="noopener noreferrer">
+      <a href="https://iskcon-kanpur.vercel.app/" className="hover:text-orange-400 transition-colors" target="_blank" rel="noopener noreferrer">
         ISKCON Kanpur
       </a>
     </li>
@@ -715,7 +715,7 @@ return (
   <ul className="space-y-2 text-black">
     <li>
       <a href="https://iskconkanpur.com/donate__trashed/folk/" className="hover:text-orange-400 transition-colors" target="_blank" rel="noopener noreferrer">
-        FLOK
+        FOLK
       </a>
     </li>
     <li>
