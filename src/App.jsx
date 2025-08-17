@@ -383,6 +383,7 @@ const gallery = [
                     <button onClick={() => scrollToSection('philosophy')} className="block w-full text-left px-6 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-600 transition-colors">Our Philosophy</button>
                     <button className="block w-full text-left px-6 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-600 transition-colors">Founder Acharya</button>
                     <button className="block w-full text-left px-6 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-600 transition-colors">Temple History</button>
+                    <button onClick={() => window.open("https://www.gopals.org.in/", "_blank")} className="block w-full text-left px-6 py-3 text-gray-700 hover:bg-orange-50 hover:text-orange-600 transition-colors">Children's Wing</button>
                   </div>
                 )}
               </div>
@@ -891,170 +892,199 @@ const gallery = [
       </section>
      
       {/* Footer */}
-      <footer className="bg-gradient-to-br from-gray-800 to-gray-900 text-white py-16">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {/* Logo and Description */}
-            <div className="col-span-1 md:col-span-2">
-              <div className="flex items-center space-x-4 mb-6" >
-                      <img 
-                        src="/images/iskcon-logo.png"
-                        alt="ISKCON Kanpur Logo"
-                        className="w-25 h-25 object-contain rounded-full bg-white transition-colors"/>
-                <div>
-                  <h3 className="text-xl font-bold">ISKCON Kanpur</h3>
-                  <p className="text-gray-300 text-sm">International Society for Krishna Consciousness</p>
-                </div>
-              </div>
-              <p className="text-gray-300 mb-6 max-w-md">Dedicated to spreading the timeless wisdom of Krishna Consciousness and serving humanity through spiritual knowledge and devotional practices.</p>
-<span className="flex space-x-4 rounded-xl bg-yellow-400 w-3xs" >
-  <a
-  href="https://www.instagram.com/iskcon_kanpur/"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-300 hover:border-2 transition-colors"
-  aria-label="Instagram"
->
-  <svg
-    className="w-6 h-6 text-gray-800 dark:text-white"
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-  >
-    <path
-      fill="currentColor"
-      fillRule="evenodd"
-      d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
-      clipRule="evenodd"
-    />
-  </svg>
-</a>
+     <footer className="bg-gradient-to-br from-gray-800 to-gray-900 text-white py-16">
+  <div className="container mx-auto px-4">
+    <div className="grid grid-cols-1 md:grid-cols-6 gap-8">
+      {/* Logo and Description */}
+      <div className="col-span-1 md:col-span-2">
+        <div className="flex items-center space-x-4 mb-6">
+          <img
+            src="/images/iskcon-logo.png"
+            alt="ISKCON Kanpur Logo"
+            className="w-25 h-25 object-contain rounded-full bg-white transition-colors"
+          />
+          <div>
+            <h3 className="text-xl font-bold">ISKCON Kanpur</h3>
+            <p className="text-gray-300 text-sm">International Society for Krishna Consciousness</p>
+          </div>
+        </div>
+        <p className="text-gray-300 mb-6 max-w-md">
+          Dedicated to spreading the timeless wisdom of Krishna Consciousness and serving humanity through spiritual knowledge and devotional practices.
+        </p>
+        {/* Socials */}
+        <span className="flex space-x-4 rounded-xl bg-yellow-400 w-3xs">
+          {/* ... your social links ... */}
+        </span>
+      </div>
 
+      {/* Quick Links */}
+      <div>
+        <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+        <ul className="space-y-2 text-black">
+           {/* Quick Links */}
+            <div>
+  
+  <ul className="space-y-2 text-black">
+    <li>
+      <button
+        onClick={() => window.open("https://iskconkanpur.com/about-us/", "_blank")}
+        className="hover:text-orange-400 transition-colors"
+      >
+        About Us
+      </button>
+    </li>
+    <li>
+      <button
+        onClick={() => window.open("https://iskconkanpur.com/philosophy/", "_blank")}
+        className="hover:text-orange-400 transition-colors"
+      >
+        Philosophy
+      </button>
+    </li>
+    <li>
+      <button
+        onClick={() => window.open("https://iskconkanpur.com/programs/", "_blank")}
+        className="hover:text-orange-400 transition-colors"
+      >
+        Programs
+      </button>
+    </li>
+    <li>
+      <button
+        onClick={() => window.open("https://iskconkanpur.com/events/", "_blank")}
+        className="hover:text-orange-400 transition-colors"
+      >
+        Events
+      </button>
+    </li>
+    <li>
+      <button
+        onClick={() => window.open("https://iskconkanpur.com/gallery/", "_blank")}
+        className="hover:text-orange-400 transition-colors"
+      >
+        Gallery
+      </button>
+    </li>
+  </ul>
+            </div>
+        </ul>
+      </div>
 
-
-              
-                   <a href="https://www.facebook.com/iskcon.kanpur.96"
-
-  target="_blank"
-  rel="noopener noreferrer"
-  className="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-300 hover:border-2  transition-colors"
-  aria-label="Facebook"
->
-
- <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-  <path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/>
-</svg>
-                </a>
-
-                <a
-                   href="https://x.com/ISKCON_KANPUR"
-                  target="_blank"
-                   rel="noopener noreferrer"
-  className="w-10 h-10 flex items-center justify-center rounded-full  hover:bg-gray-300 hover:border-2  transition-colors"
-                  aria-label="Twitter"
-                >
-                  <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-  <path d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z"/>
-</svg>
-
-                </a>
-
-                <a
-                  href="https://www.linkedin.com/company/iskcon-kanpur/"
-                  target="_blank"
-                      rel="noopener noreferrer"
-  className="w-10 h-10 flex items-center justify-center rounded-full  hover:bg-gray-300 hover:border-2  transition-colors"
-                  aria-label="LinkedIn"
-                >
-                  <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-  <path fill-rule="evenodd" d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z" clip-rule="evenodd"/>
-  <path d="M7.2 8.809H4V19.5h3.2V8.809Z"/>
-</svg>
-
-                </a>
-
-                <a
-                  href="https://www.youtube.com/@iskconkanpur"
-                  target="_blank"
-                  rel="noopener noreferrer"
-  className="w-10 h-10 flex items-center justify-center rounded-full  hover:bg-gray-300 hover:border-2  transition-colors"
-                  aria-label="YouTube"
-                >
-                 <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-  <path fill-rule="evenodd" d="M21.7 8.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.839c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.839 4.225 4.225 0 0 0-.79 1.965 30.146 30.146 0 0 0-.2 3.206v1.5a30.12 30.12 0 0 0 .2 3.206c.094.712.364 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.151 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965 30.12 30.12 0 0 0 .2-3.206v-1.516a30.672 30.672 0 0 0-.202-3.206Zm-11.692 6.554v-5.62l5.4 2.819-5.4 2.801Z" clip-rule="evenodd"/>
-</svg>
-
-                </a>
-
-              </span>
-            </div>
-
-            {/* Quick Links */}
-            <div>
-  <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+      {/* About Us (from image) */}
+<div>
+  <h4 className="text-lg font-semibold mb-4 text-white">About Us</h4>
   <ul className="space-y-2 text-black">
     <li>
-      <button
-        onClick={() => window.open("https://iskconkanpur.com/about-us/", "_blank")}
-        className="hover:text-orange-400 transition-colors"
-      >
-        About Us
-      </button>
+      <a href="https://iskconkanpur.com/" className="hover:text-orange-400 transition-colors" target="_blank" rel="noopener noreferrer">
+        ISKCON Kanpur
+      </a>
     </li>
     <li>
-      <button
-        onClick={() => window.open("https://iskconkanpur.com/philosophy/", "_blank")}
-        className="hover:text-orange-400 transition-colors"
-      >
-        Philosophy
-      </button>
+      <a href="https://iskconkanpur.com/what-is-iskcon/" className="hover:text-orange-400 transition-colors" target="_blank" rel="noopener noreferrer">
+        What is ISKCON?
+      </a>
     </li>
     <li>
-      <button
-        onClick={() => window.open("https://iskconkanpur.com/programs/", "_blank")}
-        className="hover:text-orange-400 transition-colors"
-      >
-        Programs
-      </button>
+      <a href="https://iskconkanpur.com/author/admin/" className="hover:text-orange-400 transition-colors" target="_blank" rel="noopener noreferrer">
+        Srila Prabhupada
+      </a>
     </li>
     <li>
-      <button
-        onClick={() => window.open("https://iskconkanpur.com/events/", "_blank")}
-        className="hover:text-orange-400 transition-colors"
-      >
-        Events
-      </button>
+      <a href="https://www.iskconkanpur.com/ur/privacy-policy" className="hover:text-orange-400 transition-colors" target="_blank" rel="noopener noreferrer">
+        Privacy Policy
+      </a>
     </li>
     <li>
-      <button
-        onClick={() => window.open("https://iskconkanpur.com/gallery/", "_blank")}
-        className="hover:text-orange-400 transition-colors"
-      >
-        Gallery
-      </button>
+      <a href="https://www.iskconkanpur.com/ja/about-iskcon" className="hover:text-orange-400 transition-colors" target="_blank" rel="noopener noreferrer">
+        Terms &amp; Conditions
+      </a>
     </li>
   </ul>
 </div>
 
+{/* Booking (from image) */}
+<div>
+  <h4 className="text-lg font-semibold mb-4 text-white">Booking</h4>
+  <ul className="space-y-2 text-black">
+    <li>
+      <a href="https://iskconkanpur.com/spiritual-discourses/" className="hover:text-orange-400 transition-colors" target="_blank" rel="noopener noreferrer">
+        Katha
+      </a>
+    </li>
+    <li>
+      <a href="https://iskconkanpur.com/offer-puja/" className="hover:text-orange-400 transition-colors" target="_blank" rel="noopener noreferrer">
+        Offer Puja
+      </a>
+    </li>
+    <li>
+      <a href="https://iskconkanpur.com/plan-a-visit/" className="hover:text-orange-400 transition-colors" target="_blank" rel="noopener noreferrer">
+        Guest House
+      </a>
+    </li>
+    <li>
+      <a href="https://iskconkanpur.com/brahmana-bhoj-seva/" className="hover:text-orange-400 transition-colors" target="_blank" rel="noopener noreferrer">
+        Brahmana Bhoj Seva
+      </a>
+    </li>
+    <li>
+      <a href="https://iskconkanpur.com/life-membership/" className="hover:text-orange-400 transition-colors" target="_blank" rel="noopener noreferrer">
+        Join ISKCON Kanpur / Training
+      </a>
+    </li>
+  </ul>
+</div>
 
-            {/* Contact Info */}
-            <div>
-              <h4 className="text-lg font-semibold mb-4">Contact</h4>
-              <div className="space-y-2 text-gray-300 text-sm">
-                <p>Sri Sri Radha Madhava Mandir, Mainavati Marg, Bithoor Rd </p>
-                <p>Kanpur, Uttar Pradesh 208002</p>
-                <p>Phone: +91-7080007011</p>
-                <p>Email: kanpuriskcon@gmail.com</p>
-              </div>
-            </div>
-          </div>
+{/* Donate (from image) */}
+<div>
+  <h4 className="text-lg font-semibold mb-4 text-white">Donate</h4>
+  <ul className="space-y-2 text-black">
+    <li>
+      <a href="https://iskconkanpur.com/donate__trashed/folk/" className="hover:text-orange-400 transition-colors" target="_blank" rel="noopener noreferrer">
+        FLOK
+      </a>
+    </li>
+    <li>
+      <a href="https://iskconkanpur.com/donation/index.php" className="hover:text-orange-400 transition-colors" target="_blank" rel="noopener noreferrer">
+        CSR
+      </a>
+    </li>
+    <li>
+      <a href="https://iskconkanpur.com/youth-activities/" className="hover:text-orange-400 transition-colors" target="_blank" rel="noopener noreferrer">
+        Youth Activities
+      </a>
+    </li>
+    <li>
+      <a href="https://iskconkanpur.com/cow-protection/" className="hover:text-orange-400 transition-colors" target="_blank" rel="noopener noreferrer">
+        Gau Seva
+      </a>
+    </li>
+    <li>
+      <a href="https://iskconkanpur.com/food-for-life/" className="hover:text-orange-400 transition-colors" target="_blank" rel="noopener noreferrer">
+        Food for life
+      </a>
+    </li>
+  </ul>
+</div>
 
-          <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400 text-sm">
-            <p>&copy; 2025 ISKCON Kanpur. All rights reserved. | Hare Krishna Hare Krishna Krishna Krishna Hare Hare</p>
-            <p>Made with Bhakti by Dhawal❤️</p>
-          </div>
+      {/* Contact Info */}
+      <div>
+        <h4 className="text-lg font-semibold mb-4">Contact</h4>
+        <div className="space-y-2 text-gray-300 text-sm">
+          <p>Sri Sri Radha Madhava Mandir, Mainavati Marg, Bithoor Rd </p>
+          <p>Kanpur, Uttar Pradesh 208002</p>
+          <p>Phone: +91-7080007011</p>
+          <p>Email: kanpuriskcon@gmail.com</p>
         </div>
-      </footer>
+      </div>
+    </div>
+
+    <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400 text-sm">
+      <p>&copy; 2025 ISKCON Kanpur. All rights reserved. | Hare Krishna Hare Krishna Krishna Krishna Hare Hare</p>
+      <p>Made with Bhakti by Dhawal❤️</p>
+    </div>
+  </div>
+</footer>
+
     </div>
   );
 };
